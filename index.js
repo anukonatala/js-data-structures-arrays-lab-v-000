@@ -17,8 +17,7 @@ function destructivelyPrependDriver(name){
 }
 
 function appendDriver(name){
-  newDrivers = [];
-  newDrivers = drivers;
+  newDrivers = drivers.slice;
   newDrivers.push(name);
 }
 
