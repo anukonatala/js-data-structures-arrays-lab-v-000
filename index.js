@@ -20,16 +20,19 @@ function destructivelyPrependDriver(name){
 function appendDriver(name){
   let newDrivers = drivers.slice();
   newDrivers.push(name);
+  return newDrivers;
 }
 
 function prependDriver(name){
   let newDrivers = drivers.slice();
   newDrivers.unshift(name);
+  return newDrivers;
 }
 
 function removeLastDriver(){
   let newDrivers = drivers.slice();
   newDrivers.pop();
+  return newDrivers;
 }
 
 function removeFirstDriver(){
